@@ -1,0 +1,27 @@
+{
+  "name": "my-product",
+  "private": true,
+  "engines": {
+    "node": ">=22"
+  },
+  "devEngines": {
+    "packageManager": {
+      "name": "pnpm",
+      "version": "11.26.0"
+    }
+  },
+  "scripts": {
+    "dev": "turbo dev",
+    "dev:web": "turbo dev --filter=@repo/web",
+    "dev:mobile": "turbo dev --filter=@repo/mobile",
+    "build": "turbo build",
+    "lint": "turbo lint",
+    "typecheck": "turbo typecheck",
+    "test": "turbo test",
+    "check": "turbo lint typecheck test"
+  },
+  "devDependencies": {
+    "turbo": "^2.10.0",
+    "typescript": "^5"
+  }
+}
